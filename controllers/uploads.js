@@ -12,6 +12,7 @@ cloudinary.config({
 const uploadImg = async (req, res) => {
   try {
     const imageUrls = [];
+    console.log(req.files.images);
 
     // Upload secondary images
     if (req.files.images && Array.isArray(req.files.images)) {
